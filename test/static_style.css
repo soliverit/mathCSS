@@ -1,0 +1,10 @@
+#content{
+	display: 	block;
+	position: 	relative;
+	background:	beige;
+	left: 		300px;
+	top:		100px;
+	width:		1000px;
+	height:		550px;
+	padding:	5px;
+}
