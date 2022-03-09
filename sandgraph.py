@@ -14,6 +14,7 @@ from lib.css_blocks.simple_linear_regression	import SimpleLinearRegression
 from lib.css_property							import CSSProperty
 from lib.html_document							import HTMLDocument
 from lib.html_objects.graph						import Graph
+from lib.html_objects.series					import Series
 
 
 def printBlock(name, block):
@@ -23,16 +24,18 @@ def printBlock(name, block):
 	
 ## Some data
 X, Y	= [], []
-for idx in range(10):
-	X.append(CSSProperty("x-" + str(idx), idx * 10))
-	Y.append(CSSProperty("y-" + str(idx), idx * 20+ randint(6, 13)))
+for idx in range(50):
+	X.append(CSSProperty("x-" + str(idx), idx * 2))
+	Y.append(CSSProperty("y-" + str(idx), idx  + randint(1, 3)))
 ## Some data points for the graph
 series	= []
-for idx in range(10):
-	series.append(SimpleLinearRegression("lin-" + str(idx), X, Y, idx * 1, "top"))
+line	= []
+for idx in range(50):
+	line.append(SimpleLinearRegression("lin-a" + str(idx), X, Y, X[idx].value, "bottom"))
+	series.append(SimpleLinearRegression("lin-" + str(idx), X, Y, idx * randint(1, 3), "bottom"))
 ## The graph
 html	= HTMLDocument()
-graph	= Graph("the-graph", series)
+graph	= Graph("the-graph", [Series(series, "green"), Series(line, "red")])
 html.addObject(graph)
 print("--- HTML ---")
 # print(graph.html)
