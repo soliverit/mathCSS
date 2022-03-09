@@ -9,16 +9,20 @@ class Distance(CSSBlock):
 		self.addProperty(b)
 	def toBlockString(self):
 		handle		= self.getHandle()
-		baseHandleA	= handle + "-a"
-		baseHandleB	= handle + "-b"
-		baseHandleC	= handle + "-c"
-		sumHandleC	= handle + "-sum-c"
-		sqrtHandle	= handle + "-sqrt"
+		baeHnadle	= handle.replace("--", "")
+		baseHandleA	= baeHnadle + "-a"
+		baseHandleB	= baeHnadle + "-b"
+		baseHandleC	= baeHnadle + "-c"
+		sumHandleC	= baeHnadle + "-sum-c"
+		sqrtHandle	= baeHnadle + "-sqrt"
+		##
+		# Remove -- so to the double "----"
+		##
 		aSquared	= Power(baseHandleA, self.properties[0], 2)
 		bSquared	= Power(baseHandleB, self.properties[1], 2)
 		cSquared	= Sum(sumHandleC, [baseHandleA, baseHandleB])
 		distance	= Sqrt(sqrtHandle, sumHandleC)
-		output		= "".join([aSquared.toBlockString(), bSquared.toBlockString(), cSquared.toBlockString()]) + ";\n"
-		
-		return output + "\n" + handle + ":" + distance.getHandle()
+		output		= ";\n".join([aSquared.toBlockString(), bSquared.toBlockString(), cSquared.toBlockString()]) + "\n"
+		output		+= distance.toBlockString() + ";\n"
+		return output + "\n" + handle + ": " + distance.getHandle() + ";"
 	

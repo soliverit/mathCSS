@@ -1,7 +1,16 @@
 from ..css_block import CSSBlock
 class SimpleLinearRegression(CSSBlock):
-	def __init__(self, handle, xSet, ySet, targetProperty=False):
+	def __init__(self, handle, xSet, ySet, x, targetProperty=False):
+		## Super stuff
 		super().__init__(handle, targetProperty)
+		## Instance stuff
+		##
+		# x:	The value that the  y = mx + c.
+		#
+		# Due to the nature of the library, the linear has to be calculated every
+		# for every x you want to evaluate. 
+		##
+		self.x	 = x
 		for xProperty in xSet:
 			self.addXProperty(xProperty)
 		self.yProperties	=[]
@@ -43,12 +52,16 @@ class SimpleLinearRegression(CSSBlock):
 		output		+= meanYHandle + ": calc((" + " + ".join(["var(" + y  + ")" for y in yHandles]) + ") / " + str(len(yHandles)) + ");\n"
 		## Error values
 		xesValues	= []
+		xErrHandles	= []
+		yErrHandles	= []
 		xesHandle	= handle + "-err-s"
 		for idx in range(0, len(self.properties)):
 			xErrHandle	= handle + "-err-x" + str(idx)
 			yErrHandle	= handle + "-err-y" + str(idx)
-			output		+= xErrHandle + ": calc( var(" + xErrHandle + ") - var(" + meanXHandle + ");\n"
-			output		+= yErrHandle + ": calc( var(" + yErrHandle + ") - var(" + meanYHandle + ");\n"
+			xErrHandles.append(xErrHandle)
+			yErrHandles.append(yErrHandle)
+			output		+= xErrHandle + ": calc(var(" + xHandles[idx] + ") - var(" + meanXHandle + "));\n"
+			output		+= yErrHandle + ": calc(var(" + yHandles[idx] + ") - var(" + meanYHandle + "));\n"
 			xesValues.append("var(" + xErrHandle + ") * var(" + xErrHandle + ")")
 		## X Error sum
 		output		+= xesHandle + ":" + " + ".join(xesValues) + ";\n"
@@ -59,12 +72,12 @@ class SimpleLinearRegression(CSSBlock):
 			xErrSHandle	= handle + "-err-x-s" + str(idx)
 			yErrSHandle	= handle + "-err-y-s" + str(idx)
 			b1Handles.append("var(" + xErrSHandle + ")")
-			output		+= xErrSHandle + ": calc(var(" + xErrSHandle + ") * var(" + yErrSHandle	 + "));\n"
+			output		+= xErrSHandle + ": calc(var(" + xErrHandles[idx] + ") * var(" + yErrHandles[idx]	 + "));\n"
 		## B1
 		b1Handle	= handle + "-" + "B1"
 		output		+= b1Handle + ": calc((" + " + \n\t".join(b1Handles) + ") / var(" + xesHandle + "));\n"
 		## B
-		output		+= handle + ": calc(var(" + meanYHandle + ") - var(" + b1Handle + ") * var(" + meanXHandle + "));\n"
+		output		+= handle + ": calc(" + str(self.x) + "px * (var(" + meanYHandle + ") - var(" + b1Handle + ") * var(" + meanXHandle + ")));\n"
 		return output
 			
 		

@@ -15,7 +15,7 @@ class Power(CSSBlock):
 	def toBlockString(self):
 		handle	= self.getHandle()
 		outputs	= []
-		for idx in range(0, self.power - 1):
+		for idx in range(0, self.power):
 			outputs.append(self.valueString())
 		return handle + ": calc(" + " * ".join(outputs) + ");"
 			

@@ -8,6 +8,7 @@ from lib.css_blocks.tan							import Tan
 from lib.css_blocks.distance					import Distance
 from lib.css_blocks.simple_linear_regression	import SimpleLinearRegression
 from lib.css_property							import CSSProperty
+from lib.html_document							import HTMLDocument
 
 def printBlock(name, block):
 	print("--- " + name + " ---")
@@ -15,11 +16,41 @@ def printBlock(name, block):
 	print("-----------------------")
 	
 ## Properties
-a		= CSSProperty("a", 3)
-b		= CSSProperty("	b", 4)
+a		= CSSProperty("a", 30)
+b		= CSSProperty("	b", 40)
 deg		= CSSProperty("angle", 45)
-x		= [CSSProperty("x1", 3), CSSProperty("x2", 5), CSSProperty("x3", 10), CSSProperty("x3", 12), CSSProperty("x3", 10)]
+x		= [CSSProperty("x1", 30), CSSProperty("x2", 5), CSSProperty("x3", 4), CSSProperty("x3", 5), CSSProperty("x3", 4)]
 y		= [CSSProperty("y1", 3), CSSProperty("y2", 7), CSSProperty("y3", 12), CSSProperty("x3", 15), CSSProperty("x3", 12)]
+
+html	= HTMLDocument()
+
+html.write("./page.html")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## Objects
 sum		= Sum("sum", x, 'height')
 power	= Power("power", a, b, 'height')
@@ -34,14 +65,14 @@ lin		= SimpleLinearRegression("slg", x, y, 'height')
 ## Debug
 print("Let's do this")
 printBlock("SUM", sum)
-printBlock("POWER", power)
-printBlock("PRODUCT", product)
-printBlock("SQRT", sqrt)
-printBlock("SIN", sin)
-printBlock("COS", cos)
-printBlock("TAN", tan)
+# printBlock("POWER", power)
+# printBlock("PRODUCT", product)
+# printBlock("SQRT", sqrt)
+# printBlock("SIN", sin)
+# printBlock("COS", cos)
+# printBlock("TAN", tan)
 printBlock("DIST", dist)
-printBlock("Simple linear regression", lin)
+# printBlock("Simple linear regression", lin)
 
 ## Do test stuff
 page	= open("./test/page.html", "w")

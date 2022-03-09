@@ -11,7 +11,6 @@ class Sum(CSSBlock):
 		for idx in range(len(self.properties)):
 			propertyHandle = handle + "-property-" + str(idx)
 			propertyHandles.append("var(" + propertyHandle + ")")
-			print(">>" +  self.getPropertyString(idx))
 			properties.append(propertyHandle + ": " + self.getPropertyString(idx))
 		output = ";\n".join(properties) + ";\n"
 		output += handle + ": calc(" + " + ".join(propertyHandles) + ");"
