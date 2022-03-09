@@ -1,3 +1,7 @@
+## Includes
+# Native
+from random import randint
+# Project
 from lib.css_blocks.sum							import Sum
 from lib.css_blocks.power						import Power
 from lib.css_blocks.product						import Product
@@ -11,6 +15,7 @@ from lib.css_property							import CSSProperty
 from lib.html_document							import HTMLDocument
 from lib.html_objects.graph						import Graph
 
+
 def printBlock(name, block):
 	print("--- " + name + " ---")
 	print(str(block).replace("\n", "\n\t").replace("\t}","}"))
@@ -19,12 +24,12 @@ def printBlock(name, block):
 ## Some data
 X, Y	= [], []
 for idx in range(10):
-	X.append(CSSProperty("x-" + str(idx), idx + 1))
-	Y.append(CSSProperty("y-" + str(idx), (idx + 1) * 2))
+	X.append(CSSProperty("x-" + str(idx), idx * 10))
+	Y.append(CSSProperty("y-" + str(idx), idx * 20+ randint(6, 13)))
 ## Some data points for the graph
 series	= []
 for idx in range(10):
-	series.append(SimpleLinearRegression("lin-" + str(idx), X, Y, idx, "top"))
+	series.append(SimpleLinearRegression("lin-" + str(idx), X, Y, idx * 1, "top"))
 ## The graph
 html	= HTMLDocument()
 graph	= Graph("the-graph", series)

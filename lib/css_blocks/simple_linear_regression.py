@@ -64,7 +64,7 @@ class SimpleLinearRegression(CSSBlock):
 			output		+= yErrHandle + ": calc(var(" + yHandles[idx] + ") - var(" + meanYHandle + "));\n"
 			xesValues.append("var(" + xErrHandle + ") * var(" + xErrHandle + ")")
 		## X Error sum
-		output		+= xesHandle + ":" + " + ".join(xesValues) + ";\n"
+		output		+= xesHandle + ": calc(" + " + ".join(xesValues) + ");\n"
 			
 		## Error S 
 		b1Handles	= []
@@ -77,7 +77,7 @@ class SimpleLinearRegression(CSSBlock):
 		b1Handle	= handle + "-" + "B1"
 		output		+= b1Handle + ": calc((" + " + \n\t".join(b1Handles) + ") / var(" + xesHandle + "));\n"
 		## B
-		output		+= handle + ": calc(" + str(self.x) + "px * (var(" + meanYHandle + ") - var(" + b1Handle + ") * var(" + meanXHandle + ")));\n"
+		output		+= handle + ": calc(" + str(self.x) + " * (var(" + meanYHandle + ") - var(" + b1Handle + ") * var(" + meanXHandle + ")));\n"
 		return output
 			
 		
