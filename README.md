@@ -3,6 +3,8 @@
 A python CSS factory for Math and Plotting in vanilla CSS. 
 
   Math stuff: Power, Product, Sum, Sin, Cos, Tan, Distance, SimpleLinearRegression, BallisticFormula 
+#### Why?
+Slow news day
 
 ### Notes
 
