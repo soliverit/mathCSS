@@ -1,0 +1,961 @@
+#ballistic-series0{
+--ballistic-series0-half-number: -0.5;
+--ballistic-series0-gravity: 5.5;
+--ballistic-series0-time: 0;
+--ballistic-series0-velocity: 57;
+--ballistic-series0y-offset: 20;
+--ballistic-series0-time-squared: calc(var(--ballistic-series0-time) * var(--ballistic-series0-time));
+--ballistic-series0-y-property-0: var(--ballistic-series0-half-number);
+--ballistic-series0-y-property-1: var(--ballistic-series0-gravity);
+--ballistic-series0-y-property-2: var(--ballistic-series0-time-squared);
+--ballistic-series0-y: calc(var(--ballistic-series0-y-property-0) * var(--ballistic-series0-y-property-1) * var(--ballistic-series0-y-property-2));
+--ballistic-series0-vt-property-0: var(--ballistic-series0-velocity);
+--ballistic-series0-vt-property-1: var(--ballistic-series0-time);
+--ballistic-series0-vt: calc(var(--ballistic-series0-vt-property-0) * var(--ballistic-series0-vt-property-1));
+----ballistic-series0-y-property-0: var(--ballistic-series0y-offset);
+----ballistic-series0-y-property-1: var(--ballistic-series0-vt);
+----ballistic-series0-y-property-2: var(--ballistic-series0-y);
+----ballistic-series0-y: calc(var(----ballistic-series0-y-property-0) + var(----ballistic-series0-y-property-1) + var(----ballistic-series0-y-property-2));
+--ballistic-series0: var(----ballistic-series0-y);
+
+bottom:calc(1px * var(--ballistic-series0));
+height: 5px;
+width: 5px;
+left: 5px;
+display: block;
+position: absolute;
+margin: 2px;
+border: 1px solid black;
+z-index: 10;
+background: green;
+}
+
+#ballistic-series1{
+--ballistic-series1-half-number: -0.5;
+--ballistic-series1-gravity: 5.5;
+--ballistic-series1-time: 1;
+--ballistic-series1-velocity: 57;
+--ballistic-series1y-offset: 20;
+--ballistic-series1-time-squared: calc(var(--ballistic-series1-time) * var(--ballistic-series1-time));
+--ballistic-series1-y-property-0: var(--ballistic-series1-half-number);
+--ballistic-series1-y-property-1: var(--ballistic-series1-gravity);
+--ballistic-series1-y-property-2: var(--ballistic-series1-time-squared);
+--ballistic-series1-y: calc(var(--ballistic-series1-y-property-0) * var(--ballistic-series1-y-property-1) * var(--ballistic-series1-y-property-2));
+--ballistic-series1-vt-property-0: var(--ballistic-series1-velocity);
+--ballistic-series1-vt-property-1: var(--ballistic-series1-time);
+--ballistic-series1-vt: calc(var(--ballistic-series1-vt-property-0) * var(--ballistic-series1-vt-property-1));
+----ballistic-series1-y-property-0: var(--ballistic-series1y-offset);
+----ballistic-series1-y-property-1: var(--ballistic-series1-vt);
+----ballistic-series1-y-property-2: var(--ballistic-series1-y);
+----ballistic-series1-y: calc(var(----ballistic-series1-y-property-0) + var(----ballistic-series1-y-property-1) + var(----ballistic-series1-y-property-2));
+--ballistic-series1: var(----ballistic-series1-y);
+
+bottom:calc(1px * var(--ballistic-series1));
+height: 5px;
+width: 5px;
+left: 35px;
+display: block;
+position: absolute;
+margin: 2px;
+border: 1px solid black;
+z-index: 10;
+background: green;
+}
+
+#ballistic-series2{
+--ballistic-series2-half-number: -0.5;
+--ballistic-series2-gravity: 5.5;
+--ballistic-series2-time: 2;
+--ballistic-series2-velocity: 57;
+--ballistic-series2y-offset: 20;
+--ballistic-series2-time-squared: calc(var(--ballistic-series2-time) * var(--ballistic-series2-time));
+--ballistic-series2-y-property-0: var(--ballistic-series2-half-number);
+--ballistic-series2-y-property-1: var(--ballistic-series2-gravity);
+--ballistic-series2-y-property-2: var(--ballistic-series2-time-squared);
+--ballistic-series2-y: calc(var(--ballistic-series2-y-property-0) * var(--ballistic-series2-y-property-1) * var(--ballistic-series2-y-property-2));
+--ballistic-series2-vt-property-0: var(--ballistic-series2-velocity);
+--ballistic-series2-vt-property-1: var(--ballistic-series2-time);
+--ballistic-series2-vt: calc(var(--ballistic-series2-vt-property-0) * var(--ballistic-series2-vt-property-1));
+----ballistic-series2-y-property-0: var(--ballistic-series2y-offset);
+----ballistic-series2-y-property-1: var(--ballistic-series2-vt);
+----ballistic-series2-y-property-2: var(--ballistic-series2-y);
+----ballistic-series2-y: calc(var(----ballistic-series2-y-property-0) + var(----ballistic-series2-y-property-1) + var(----ballistic-series2-y-property-2));
+--ballistic-series2: var(----ballistic-series2-y);
+
+bottom:calc(1px * var(--ballistic-series2));
+height: 5px;
+width: 5px;
+left: 65px;
+display: block;
+position: absolute;
+margin: 2px;
+border: 1px solid black;
+z-index: 10;
+background: green;
+}
+
+#ballistic-series3{
+--ballistic-series3-half-number: -0.5;
+--ballistic-series3-gravity: 5.5;
+--ballistic-series3-time: 3;
+--ballistic-series3-velocity: 57;
+--ballistic-series3y-offset: 20;
+--ballistic-series3-time-squared: calc(var(--ballistic-series3-time) * var(--ballistic-series3-time));
+--ballistic-series3-y-property-0: var(--ballistic-series3-half-number);
+--ballistic-series3-y-property-1: var(--ballistic-series3-gravity);
+--ballistic-series3-y-property-2: var(--ballistic-series3-time-squared);
+--ballistic-series3-y: calc(var(--ballistic-series3-y-property-0) * var(--ballistic-series3-y-property-1) * var(--ballistic-series3-y-property-2));
+--ballistic-series3-vt-property-0: var(--ballistic-series3-velocity);
+--ballistic-series3-vt-property-1: var(--ballistic-series3-time);
+--ballistic-series3-vt: calc(var(--ballistic-series3-vt-property-0) * var(--ballistic-series3-vt-property-1));
+----ballistic-series3-y-property-0: var(--ballistic-series3y-offset);
+----ballistic-series3-y-property-1: var(--ballistic-series3-vt);
+----ballistic-series3-y-property-2: var(--ballistic-series3-y);
+----ballistic-series3-y: calc(var(----ballistic-series3-y-property-0) + var(----ballistic-series3-y-property-1) + var(----ballistic-series3-y-property-2));
+--ballistic-series3: var(----ballistic-series3-y);
+
+bottom:calc(1px * var(--ballistic-series3));
+height: 5px;
+width: 5px;
+left: 95px;
+display: block;
+position: absolute;
+margin: 2px;
+border: 1px solid black;
+z-index: 10;
+background: green;
+}
+
+#ballistic-series4{
+--ballistic-series4-half-number: -0.5;
+--ballistic-series4-gravity: 5.5;
+--ballistic-series4-time: 4;
+--ballistic-series4-velocity: 57;
+--ballistic-series4y-offset: 20;
+--ballistic-series4-time-squared: calc(var(--ballistic-series4-time) * var(--ballistic-series4-time));
+--ballistic-series4-y-property-0: var(--ballistic-series4-half-number);
+--ballistic-series4-y-property-1: var(--ballistic-series4-gravity);
+--ballistic-series4-y-property-2: var(--ballistic-series4-time-squared);
+--ballistic-series4-y: calc(var(--ballistic-series4-y-property-0) * var(--ballistic-series4-y-property-1) * var(--ballistic-series4-y-property-2));
+--ballistic-series4-vt-property-0: var(--ballistic-series4-velocity);
+--ballistic-series4-vt-property-1: var(--ballistic-series4-time);
+--ballistic-series4-vt: calc(var(--ballistic-series4-vt-property-0) * var(--ballistic-series4-vt-property-1));
+----ballistic-series4-y-property-0: var(--ballistic-series4y-offset);
+----ballistic-series4-y-property-1: var(--ballistic-series4-vt);
+----ballistic-series4-y-property-2: var(--ballistic-series4-y);
+----ballistic-series4-y: calc(var(----ballistic-series4-y-property-0) + var(----ballistic-series4-y-property-1) + var(----ballistic-series4-y-property-2));
+--ballistic-series4: var(----ballistic-series4-y);
+
+bottom:calc(1px * var(--ballistic-series4));
+height: 5px;
+width: 5px;
+left: 125px;
+display: block;
+position: absolute;
+margin: 2px;
+border: 1px solid black;
+z-index: 10;
+background: green;
+}
+
+#ballistic-series5{
+--ballistic-series5-half-number: -0.5;
+--ballistic-series5-gravity: 5.5;
+--ballistic-series5-time: 5;
+--ballistic-series5-velocity: 57;
+--ballistic-series5y-offset: 20;
+--ballistic-series5-time-squared: calc(var(--ballistic-series5-time) * var(--ballistic-series5-time));
+--ballistic-series5-y-property-0: var(--ballistic-series5-half-number);
+--ballistic-series5-y-property-1: var(--ballistic-series5-gravity);
+--ballistic-series5-y-property-2: var(--ballistic-series5-time-squared);
+--ballistic-series5-y: calc(var(--ballistic-series5-y-property-0) * var(--ballistic-series5-y-property-1) * var(--ballistic-series5-y-property-2));
+--ballistic-series5-vt-property-0: var(--ballistic-series5-velocity);
+--ballistic-series5-vt-property-1: var(--ballistic-series5-time);
+--ballistic-series5-vt: calc(var(--ballistic-series5-vt-property-0) * var(--ballistic-series5-vt-property-1));
+----ballistic-series5-y-property-0: var(--ballistic-series5y-offset);
+----ballistic-series5-y-property-1: var(--ballistic-series5-vt);
+----ballistic-series5-y-property-2: var(--ballistic-series5-y);
+----ballistic-series5-y: calc(var(----ballistic-series5-y-property-0) + var(----ballistic-series5-y-property-1) + var(----ballistic-series5-y-property-2));
+--ballistic-series5: var(----ballistic-series5-y);
+
+bottom:calc(1px * var(--ballistic-series5));
+height: 5px;
+width: 5px;
+left: 155px;
+display: block;
+position: absolute;
+margin: 2px;
+border: 1px solid black;
+z-index: 10;
+background: green;
+}
+
+#ballistic-series6{
+--ballistic-series6-half-number: -0.5;
+--ballistic-series6-gravity: 5.5;
+--ballistic-series6-time: 6;
+--ballistic-series6-velocity: 57;
+--ballistic-series6y-offset: 20;
+--ballistic-series6-time-squared: calc(var(--ballistic-series6-time) * var(--ballistic-series6-time));
+--ballistic-series6-y-property-0: var(--ballistic-series6-half-number);
+--ballistic-series6-y-property-1: var(--ballistic-series6-gravity);
+--ballistic-series6-y-property-2: var(--ballistic-series6-time-squared);
+--ballistic-series6-y: calc(var(--ballistic-series6-y-property-0) * var(--ballistic-series6-y-property-1) * var(--ballistic-series6-y-property-2));
+--ballistic-series6-vt-property-0: var(--ballistic-series6-velocity);
+--ballistic-series6-vt-property-1: var(--ballistic-series6-time);
+--ballistic-series6-vt: calc(var(--ballistic-series6-vt-property-0) * var(--ballistic-series6-vt-property-1));
+----ballistic-series6-y-property-0: var(--ballistic-series6y-offset);
+----ballistic-series6-y-property-1: var(--ballistic-series6-vt);
+----ballistic-series6-y-property-2: var(--ballistic-series6-y);
+----ballistic-series6-y: calc(var(----ballistic-series6-y-property-0) + var(----ballistic-series6-y-property-1) + var(----ballistic-series6-y-property-2));
+--ballistic-series6: var(----ballistic-series6-y);
+
+bottom:calc(1px * var(--ballistic-series6));
+height: 5px;
+width: 5px;
+left: 185px;
+display: block;
+position: absolute;
+margin: 2px;
+border: 1px solid black;
+z-index: 10;
+background: green;
+}
+
+#ballistic-series7{
+--ballistic-series7-half-number: -0.5;
+--ballistic-series7-gravity: 5.5;
+--ballistic-series7-time: 7;
+--ballistic-series7-velocity: 57;
+--ballistic-series7y-offset: 20;
+--ballistic-series7-time-squared: calc(var(--ballistic-series7-time) * var(--ballistic-series7-time));
+--ballistic-series7-y-property-0: var(--ballistic-series7-half-number);
+--ballistic-series7-y-property-1: var(--ballistic-series7-gravity);
+--ballistic-series7-y-property-2: var(--ballistic-series7-time-squared);
+--ballistic-series7-y: calc(var(--ballistic-series7-y-property-0) * var(--ballistic-series7-y-property-1) * var(--ballistic-series7-y-property-2));
+--ballistic-series7-vt-property-0: var(--ballistic-series7-velocity);
+--ballistic-series7-vt-property-1: var(--ballistic-series7-time);
+--ballistic-series7-vt: calc(var(--ballistic-series7-vt-property-0) * var(--ballistic-series7-vt-property-1));
+----ballistic-series7-y-property-0: var(--ballistic-series7y-offset);
+----ballistic-series7-y-property-1: var(--ballistic-series7-vt);
+----ballistic-series7-y-property-2: var(--ballistic-series7-y);
+----ballistic-series7-y: calc(var(----ballistic-series7-y-property-0) + var(----ballistic-series7-y-property-1) + var(----ballistic-series7-y-property-2));
+--ballistic-series7: var(----ballistic-series7-y);
+
+bottom:calc(1px * var(--ballistic-series7));
+height: 5px;
+width: 5px;
+left: 215px;
+display: block;
+position: absolute;
+margin: 2px;
+border: 1px solid black;
+z-index: 10;
+background: green;
+}
+
+#ballistic-series8{
+--ballistic-series8-half-number: -0.5;
+--ballistic-series8-gravity: 5.5;
+--ballistic-series8-time: 8;
+--ballistic-series8-velocity: 57;
+--ballistic-series8y-offset: 20;
+--ballistic-series8-time-squared: calc(var(--ballistic-series8-time) * var(--ballistic-series8-time));
+--ballistic-series8-y-property-0: var(--ballistic-series8-half-number);
+--ballistic-series8-y-property-1: var(--ballistic-series8-gravity);
+--ballistic-series8-y-property-2: var(--ballistic-series8-time-squared);
+--ballistic-series8-y: calc(var(--ballistic-series8-y-property-0) * var(--ballistic-series8-y-property-1) * var(--ballistic-series8-y-property-2));
+--ballistic-series8-vt-property-0: var(--ballistic-series8-velocity);
+--ballistic-series8-vt-property-1: var(--ballistic-series8-time);
+--ballistic-series8-vt: calc(var(--ballistic-series8-vt-property-0) * var(--ballistic-series8-vt-property-1));
+----ballistic-series8-y-property-0: var(--ballistic-series8y-offset);
+----ballistic-series8-y-property-1: var(--ballistic-series8-vt);
+----ballistic-series8-y-property-2: var(--ballistic-series8-y);
+----ballistic-series8-y: calc(var(----ballistic-series8-y-property-0) + var(----ballistic-series8-y-property-1) + var(----ballistic-series8-y-property-2));
+--ballistic-series8: var(----ballistic-series8-y);
+
+bottom:calc(1px * var(--ballistic-series8));
+height: 5px;
+width: 5px;
+left: 245px;
+display: block;
+position: absolute;
+margin: 2px;
+border: 1px solid black;
+z-index: 10;
+background: green;
+}
+
+#ballistic-series9{
+--ballistic-series9-half-number: -0.5;
+--ballistic-series9-gravity: 5.5;
+--ballistic-series9-time: 9;
+--ballistic-series9-velocity: 57;
+--ballistic-series9y-offset: 20;
+--ballistic-series9-time-squared: calc(var(--ballistic-series9-time) * var(--ballistic-series9-time));
+--ballistic-series9-y-property-0: var(--ballistic-series9-half-number);
+--ballistic-series9-y-property-1: var(--ballistic-series9-gravity);
+--ballistic-series9-y-property-2: var(--ballistic-series9-time-squared);
+--ballistic-series9-y: calc(var(--ballistic-series9-y-property-0) * var(--ballistic-series9-y-property-1) * var(--ballistic-series9-y-property-2));
+--ballistic-series9-vt-property-0: var(--ballistic-series9-velocity);
+--ballistic-series9-vt-property-1: var(--ballistic-series9-time);
+--ballistic-series9-vt: calc(var(--ballistic-series9-vt-property-0) * var(--ballistic-series9-vt-property-1));
+----ballistic-series9-y-property-0: var(--ballistic-series9y-offset);
+----ballistic-series9-y-property-1: var(--ballistic-series9-vt);
+----ballistic-series9-y-property-2: var(--ballistic-series9-y);
+----ballistic-series9-y: calc(var(----ballistic-series9-y-property-0) + var(----ballistic-series9-y-property-1) + var(----ballistic-series9-y-property-2));
+--ballistic-series9: var(----ballistic-series9-y);
+
+bottom:calc(1px * var(--ballistic-series9));
+height: 5px;
+width: 5px;
+left: 275px;
+display: block;
+position: absolute;
+margin: 2px;
+border: 1px solid black;
+z-index: 10;
+background: green;
+}
+
+#ballistic-series10{
+--ballistic-series10-half-number: -0.5;
+--ballistic-series10-gravity: 5.5;
+--ballistic-series10-time: 10;
+--ballistic-series10-velocity: 57;
+--ballistic-series10y-offset: 20;
+--ballistic-series10-time-squared: calc(var(--ballistic-series10-time) * var(--ballistic-series10-time));
+--ballistic-series10-y-property-0: var(--ballistic-series10-half-number);
+--ballistic-series10-y-property-1: var(--ballistic-series10-gravity);
+--ballistic-series10-y-property-2: var(--ballistic-series10-time-squared);
+--ballistic-series10-y: calc(var(--ballistic-series10-y-property-0) * var(--ballistic-series10-y-property-1) * var(--ballistic-series10-y-property-2));
+--ballistic-series10-vt-property-0: var(--ballistic-series10-velocity);
+--ballistic-series10-vt-property-1: var(--ballistic-series10-time);
+--ballistic-series10-vt: calc(var(--ballistic-series10-vt-property-0) * var(--ballistic-series10-vt-property-1));
+----ballistic-series10-y-property-0: var(--ballistic-series10y-offset);
+----ballistic-series10-y-property-1: var(--ballistic-series10-vt);
+----ballistic-series10-y-property-2: var(--ballistic-series10-y);
+----ballistic-series10-y: calc(var(----ballistic-series10-y-property-0) + var(----ballistic-series10-y-property-1) + var(----ballistic-series10-y-property-2));
+--ballistic-series10: var(----ballistic-series10-y);
+
+bottom:calc(1px * var(--ballistic-series10));
+height: 5px;
+width: 5px;
+left: 305px;
+display: block;
+position: absolute;
+margin: 2px;
+border: 1px solid black;
+z-index: 10;
+background: green;
+}
+
+#ballistic-series11{
+--ballistic-series11-half-number: -0.5;
+--ballistic-series11-gravity: 5.5;
+--ballistic-series11-time: 11;
+--ballistic-series11-velocity: 57;
+--ballistic-series11y-offset: 20;
+--ballistic-series11-time-squared: calc(var(--ballistic-series11-time) * var(--ballistic-series11-time));
+--ballistic-series11-y-property-0: var(--ballistic-series11-half-number);
+--ballistic-series11-y-property-1: var(--ballistic-series11-gravity);
+--ballistic-series11-y-property-2: var(--ballistic-series11-time-squared);
+--ballistic-series11-y: calc(var(--ballistic-series11-y-property-0) * var(--ballistic-series11-y-property-1) * var(--ballistic-series11-y-property-2));
+--ballistic-series11-vt-property-0: var(--ballistic-series11-velocity);
+--ballistic-series11-vt-property-1: var(--ballistic-series11-time);
+--ballistic-series11-vt: calc(var(--ballistic-series11-vt-property-0) * var(--ballistic-series11-vt-property-1));
+----ballistic-series11-y-property-0: var(--ballistic-series11y-offset);
+----ballistic-series11-y-property-1: var(--ballistic-series11-vt);
+----ballistic-series11-y-property-2: var(--ballistic-series11-y);
+----ballistic-series11-y: calc(var(----ballistic-series11-y-property-0) + var(----ballistic-series11-y-property-1) + var(----ballistic-series11-y-property-2));
+--ballistic-series11: var(----ballistic-series11-y);
+
+bottom:calc(1px * var(--ballistic-series11));
+height: 5px;
+width: 5px;
+left: 335px;
+display: block;
+position: absolute;
+margin: 2px;
+border: 1px solid black;
+z-index: 10;
+background: green;
+}
+
+#ballistic-series12{
+--ballistic-series12-half-number: -0.5;
+--ballistic-series12-gravity: 5.5;
+--ballistic-series12-time: 12;
+--ballistic-series12-velocity: 57;
+--ballistic-series12y-offset: 20;
+--ballistic-series12-time-squared: calc(var(--ballistic-series12-time) * var(--ballistic-series12-time));
+--ballistic-series12-y-property-0: var(--ballistic-series12-half-number);
+--ballistic-series12-y-property-1: var(--ballistic-series12-gravity);
+--ballistic-series12-y-property-2: var(--ballistic-series12-time-squared);
+--ballistic-series12-y: calc(var(--ballistic-series12-y-property-0) * var(--ballistic-series12-y-property-1) * var(--ballistic-series12-y-property-2));
+--ballistic-series12-vt-property-0: var(--ballistic-series12-velocity);
+--ballistic-series12-vt-property-1: var(--ballistic-series12-time);
+--ballistic-series12-vt: calc(var(--ballistic-series12-vt-property-0) * var(--ballistic-series12-vt-property-1));
+----ballistic-series12-y-property-0: var(--ballistic-series12y-offset);
+----ballistic-series12-y-property-1: var(--ballistic-series12-vt);
+----ballistic-series12-y-property-2: var(--ballistic-series12-y);
+----ballistic-series12-y: calc(var(----ballistic-series12-y-property-0) + var(----ballistic-series12-y-property-1) + var(----ballistic-series12-y-property-2));
+--ballistic-series12: var(----ballistic-series12-y);
+
+bottom:calc(1px * var(--ballistic-series12));
+height: 5px;
+width: 5px;
+left: 365px;
+display: block;
+position: absolute;
+margin: 2px;
+border: 1px solid black;
+z-index: 10;
+background: green;
+}
+
+#ballistic-series13{
+--ballistic-series13-half-number: -0.5;
+--ballistic-series13-gravity: 5.5;
+--ballistic-series13-time: 13;
+--ballistic-series13-velocity: 57;
+--ballistic-series13y-offset: 20;
+--ballistic-series13-time-squared: calc(var(--ballistic-series13-time) * var(--ballistic-series13-time));
+--ballistic-series13-y-property-0: var(--ballistic-series13-half-number);
+--ballistic-series13-y-property-1: var(--ballistic-series13-gravity);
+--ballistic-series13-y-property-2: var(--ballistic-series13-time-squared);
+--ballistic-series13-y: calc(var(--ballistic-series13-y-property-0) * var(--ballistic-series13-y-property-1) * var(--ballistic-series13-y-property-2));
+--ballistic-series13-vt-property-0: var(--ballistic-series13-velocity);
+--ballistic-series13-vt-property-1: var(--ballistic-series13-time);
+--ballistic-series13-vt: calc(var(--ballistic-series13-vt-property-0) * var(--ballistic-series13-vt-property-1));
+----ballistic-series13-y-property-0: var(--ballistic-series13y-offset);
+----ballistic-series13-y-property-1: var(--ballistic-series13-vt);
+----ballistic-series13-y-property-2: var(--ballistic-series13-y);
+----ballistic-series13-y: calc(var(----ballistic-series13-y-property-0) + var(----ballistic-series13-y-property-1) + var(----ballistic-series13-y-property-2));
+--ballistic-series13: var(----ballistic-series13-y);
+
+bottom:calc(1px * var(--ballistic-series13));
+height: 5px;
+width: 5px;
+left: 395px;
+display: block;
+position: absolute;
+margin: 2px;
+border: 1px solid black;
+z-index: 10;
+background: green;
+}
+
+#ballistic-series14{
+--ballistic-series14-half-number: -0.5;
+--ballistic-series14-gravity: 5.5;
+--ballistic-series14-time: 14;
+--ballistic-series14-velocity: 57;
+--ballistic-series14y-offset: 20;
+--ballistic-series14-time-squared: calc(var(--ballistic-series14-time) * var(--ballistic-series14-time));
+--ballistic-series14-y-property-0: var(--ballistic-series14-half-number);
+--ballistic-series14-y-property-1: var(--ballistic-series14-gravity);
+--ballistic-series14-y-property-2: var(--ballistic-series14-time-squared);
+--ballistic-series14-y: calc(var(--ballistic-series14-y-property-0) * var(--ballistic-series14-y-property-1) * var(--ballistic-series14-y-property-2));
+--ballistic-series14-vt-property-0: var(--ballistic-series14-velocity);
+--ballistic-series14-vt-property-1: var(--ballistic-series14-time);
+--ballistic-series14-vt: calc(var(--ballistic-series14-vt-property-0) * var(--ballistic-series14-vt-property-1));
+----ballistic-series14-y-property-0: var(--ballistic-series14y-offset);
+----ballistic-series14-y-property-1: var(--ballistic-series14-vt);
+----ballistic-series14-y-property-2: var(--ballistic-series14-y);
+----ballistic-series14-y: calc(var(----ballistic-series14-y-property-0) + var(----ballistic-series14-y-property-1) + var(----ballistic-series14-y-property-2));
+--ballistic-series14: var(----ballistic-series14-y);
+
+bottom:calc(1px * var(--ballistic-series14));
+height: 5px;
+width: 5px;
+left: 425px;
+display: block;
+position: absolute;
+margin: 2px;
+border: 1px solid black;
+z-index: 10;
+background: green;
+}
+
+#ballistic-line0{
+--ballistic-line0-half-number: -0.5;
+--ballistic-line0-gravity: 9;
+--ballistic-line0-time: 0;
+--ballistic-line0-velocity: 45;
+--ballistic-line0y-offset: 250;
+--ballistic-line0-time-squared: calc(var(--ballistic-line0-time) * var(--ballistic-line0-time));
+--ballistic-line0-y-property-0: var(--ballistic-line0-half-number);
+--ballistic-line0-y-property-1: var(--ballistic-line0-gravity);
+--ballistic-line0-y-property-2: var(--ballistic-line0-time-squared);
+--ballistic-line0-y: calc(var(--ballistic-line0-y-property-0) * var(--ballistic-line0-y-property-1) * var(--ballistic-line0-y-property-2));
+--ballistic-line0-vt-property-0: var(--ballistic-line0-velocity);
+--ballistic-line0-vt-property-1: var(--ballistic-line0-time);
+--ballistic-line0-vt: calc(var(--ballistic-line0-vt-property-0) * var(--ballistic-line0-vt-property-1));
+----ballistic-line0-y-property-0: var(--ballistic-line0y-offset);
+----ballistic-line0-y-property-1: var(--ballistic-line0-vt);
+----ballistic-line0-y-property-2: var(--ballistic-line0-y);
+----ballistic-line0-y: calc(var(----ballistic-line0-y-property-0) + var(----ballistic-line0-y-property-1) + var(----ballistic-line0-y-property-2));
+--ballistic-line0: var(----ballistic-line0-y);
+
+bottom:calc(1px * var(--ballistic-line0));
+height: 5px;
+width: 5px;
+left: 5px;
+display: block;
+position: absolute;
+margin: 2px;
+border: 1px solid black;
+z-index: 10;
+background: red;
+}
+
+#ballistic-line1{
+--ballistic-line1-half-number: -0.5;
+--ballistic-line1-gravity: 9;
+--ballistic-line1-time: 1;
+--ballistic-line1-velocity: 45;
+--ballistic-line1y-offset: 250;
+--ballistic-line1-time-squared: calc(var(--ballistic-line1-time) * var(--ballistic-line1-time));
+--ballistic-line1-y-property-0: var(--ballistic-line1-half-number);
+--ballistic-line1-y-property-1: var(--ballistic-line1-gravity);
+--ballistic-line1-y-property-2: var(--ballistic-line1-time-squared);
+--ballistic-line1-y: calc(var(--ballistic-line1-y-property-0) * var(--ballistic-line1-y-property-1) * var(--ballistic-line1-y-property-2));
+--ballistic-line1-vt-property-0: var(--ballistic-line1-velocity);
+--ballistic-line1-vt-property-1: var(--ballistic-line1-time);
+--ballistic-line1-vt: calc(var(--ballistic-line1-vt-property-0) * var(--ballistic-line1-vt-property-1));
+----ballistic-line1-y-property-0: var(--ballistic-line1y-offset);
+----ballistic-line1-y-property-1: var(--ballistic-line1-vt);
+----ballistic-line1-y-property-2: var(--ballistic-line1-y);
+----ballistic-line1-y: calc(var(----ballistic-line1-y-property-0) + var(----ballistic-line1-y-property-1) + var(----ballistic-line1-y-property-2));
+--ballistic-line1: var(----ballistic-line1-y);
+
+bottom:calc(1px * var(--ballistic-line1));
+height: 5px;
+width: 5px;
+left: 35px;
+display: block;
+position: absolute;
+margin: 2px;
+border: 1px solid black;
+z-index: 10;
+background: red;
+}
+
+#ballistic-line2{
+--ballistic-line2-half-number: -0.5;
+--ballistic-line2-gravity: 9;
+--ballistic-line2-time: 2;
+--ballistic-line2-velocity: 45;
+--ballistic-line2y-offset: 250;
+--ballistic-line2-time-squared: calc(var(--ballistic-line2-time) * var(--ballistic-line2-time));
+--ballistic-line2-y-property-0: var(--ballistic-line2-half-number);
+--ballistic-line2-y-property-1: var(--ballistic-line2-gravity);
+--ballistic-line2-y-property-2: var(--ballistic-line2-time-squared);
+--ballistic-line2-y: calc(var(--ballistic-line2-y-property-0) * var(--ballistic-line2-y-property-1) * var(--ballistic-line2-y-property-2));
+--ballistic-line2-vt-property-0: var(--ballistic-line2-velocity);
+--ballistic-line2-vt-property-1: var(--ballistic-line2-time);
+--ballistic-line2-vt: calc(var(--ballistic-line2-vt-property-0) * var(--ballistic-line2-vt-property-1));
+----ballistic-line2-y-property-0: var(--ballistic-line2y-offset);
+----ballistic-line2-y-property-1: var(--ballistic-line2-vt);
+----ballistic-line2-y-property-2: var(--ballistic-line2-y);
+----ballistic-line2-y: calc(var(----ballistic-line2-y-property-0) + var(----ballistic-line2-y-property-1) + var(----ballistic-line2-y-property-2));
+--ballistic-line2: var(----ballistic-line2-y);
+
+bottom:calc(1px * var(--ballistic-line2));
+height: 5px;
+width: 5px;
+left: 65px;
+display: block;
+position: absolute;
+margin: 2px;
+border: 1px solid black;
+z-index: 10;
+background: red;
+}
+
+#ballistic-line3{
+--ballistic-line3-half-number: -0.5;
+--ballistic-line3-gravity: 9;
+--ballistic-line3-time: 3;
+--ballistic-line3-velocity: 45;
+--ballistic-line3y-offset: 250;
+--ballistic-line3-time-squared: calc(var(--ballistic-line3-time) * var(--ballistic-line3-time));
+--ballistic-line3-y-property-0: var(--ballistic-line3-half-number);
+--ballistic-line3-y-property-1: var(--ballistic-line3-gravity);
+--ballistic-line3-y-property-2: var(--ballistic-line3-time-squared);
+--ballistic-line3-y: calc(var(--ballistic-line3-y-property-0) * var(--ballistic-line3-y-property-1) * var(--ballistic-line3-y-property-2));
+--ballistic-line3-vt-property-0: var(--ballistic-line3-velocity);
+--ballistic-line3-vt-property-1: var(--ballistic-line3-time);
+--ballistic-line3-vt: calc(var(--ballistic-line3-vt-property-0) * var(--ballistic-line3-vt-property-1));
+----ballistic-line3-y-property-0: var(--ballistic-line3y-offset);
+----ballistic-line3-y-property-1: var(--ballistic-line3-vt);
+----ballistic-line3-y-property-2: var(--ballistic-line3-y);
+----ballistic-line3-y: calc(var(----ballistic-line3-y-property-0) + var(----ballistic-line3-y-property-1) + var(----ballistic-line3-y-property-2));
+--ballistic-line3: var(----ballistic-line3-y);
+
+bottom:calc(1px * var(--ballistic-line3));
+height: 5px;
+width: 5px;
+left: 95px;
+display: block;
+position: absolute;
+margin: 2px;
+border: 1px solid black;
+z-index: 10;
+background: red;
+}
+
+#ballistic-line4{
+--ballistic-line4-half-number: -0.5;
+--ballistic-line4-gravity: 9;
+--ballistic-line4-time: 4;
+--ballistic-line4-velocity: 45;
+--ballistic-line4y-offset: 250;
+--ballistic-line4-time-squared: calc(var(--ballistic-line4-time) * var(--ballistic-line4-time));
+--ballistic-line4-y-property-0: var(--ballistic-line4-half-number);
+--ballistic-line4-y-property-1: var(--ballistic-line4-gravity);
+--ballistic-line4-y-property-2: var(--ballistic-line4-time-squared);
+--ballistic-line4-y: calc(var(--ballistic-line4-y-property-0) * var(--ballistic-line4-y-property-1) * var(--ballistic-line4-y-property-2));
+--ballistic-line4-vt-property-0: var(--ballistic-line4-velocity);
+--ballistic-line4-vt-property-1: var(--ballistic-line4-time);
+--ballistic-line4-vt: calc(var(--ballistic-line4-vt-property-0) * var(--ballistic-line4-vt-property-1));
+----ballistic-line4-y-property-0: var(--ballistic-line4y-offset);
+----ballistic-line4-y-property-1: var(--ballistic-line4-vt);
+----ballistic-line4-y-property-2: var(--ballistic-line4-y);
+----ballistic-line4-y: calc(var(----ballistic-line4-y-property-0) + var(----ballistic-line4-y-property-1) + var(----ballistic-line4-y-property-2));
+--ballistic-line4: var(----ballistic-line4-y);
+
+bottom:calc(1px * var(--ballistic-line4));
+height: 5px;
+width: 5px;
+left: 125px;
+display: block;
+position: absolute;
+margin: 2px;
+border: 1px solid black;
+z-index: 10;
+background: red;
+}
+
+#ballistic-line5{
+--ballistic-line5-half-number: -0.5;
+--ballistic-line5-gravity: 9;
+--ballistic-line5-time: 5;
+--ballistic-line5-velocity: 45;
+--ballistic-line5y-offset: 250;
+--ballistic-line5-time-squared: calc(var(--ballistic-line5-time) * var(--ballistic-line5-time));
+--ballistic-line5-y-property-0: var(--ballistic-line5-half-number);
+--ballistic-line5-y-property-1: var(--ballistic-line5-gravity);
+--ballistic-line5-y-property-2: var(--ballistic-line5-time-squared);
+--ballistic-line5-y: calc(var(--ballistic-line5-y-property-0) * var(--ballistic-line5-y-property-1) * var(--ballistic-line5-y-property-2));
+--ballistic-line5-vt-property-0: var(--ballistic-line5-velocity);
+--ballistic-line5-vt-property-1: var(--ballistic-line5-time);
+--ballistic-line5-vt: calc(var(--ballistic-line5-vt-property-0) * var(--ballistic-line5-vt-property-1));
+----ballistic-line5-y-property-0: var(--ballistic-line5y-offset);
+----ballistic-line5-y-property-1: var(--ballistic-line5-vt);
+----ballistic-line5-y-property-2: var(--ballistic-line5-y);
+----ballistic-line5-y: calc(var(----ballistic-line5-y-property-0) + var(----ballistic-line5-y-property-1) + var(----ballistic-line5-y-property-2));
+--ballistic-line5: var(----ballistic-line5-y);
+
+bottom:calc(1px * var(--ballistic-line5));
+height: 5px;
+width: 5px;
+left: 155px;
+display: block;
+position: absolute;
+margin: 2px;
+border: 1px solid black;
+z-index: 10;
+background: red;
+}
+
+#ballistic-line6{
+--ballistic-line6-half-number: -0.5;
+--ballistic-line6-gravity: 9;
+--ballistic-line6-time: 6;
+--ballistic-line6-velocity: 45;
+--ballistic-line6y-offset: 250;
+--ballistic-line6-time-squared: calc(var(--ballistic-line6-time) * var(--ballistic-line6-time));
+--ballistic-line6-y-property-0: var(--ballistic-line6-half-number);
+--ballistic-line6-y-property-1: var(--ballistic-line6-gravity);
+--ballistic-line6-y-property-2: var(--ballistic-line6-time-squared);
+--ballistic-line6-y: calc(var(--ballistic-line6-y-property-0) * var(--ballistic-line6-y-property-1) * var(--ballistic-line6-y-property-2));
+--ballistic-line6-vt-property-0: var(--ballistic-line6-velocity);
+--ballistic-line6-vt-property-1: var(--ballistic-line6-time);
+--ballistic-line6-vt: calc(var(--ballistic-line6-vt-property-0) * var(--ballistic-line6-vt-property-1));
+----ballistic-line6-y-property-0: var(--ballistic-line6y-offset);
+----ballistic-line6-y-property-1: var(--ballistic-line6-vt);
+----ballistic-line6-y-property-2: var(--ballistic-line6-y);
+----ballistic-line6-y: calc(var(----ballistic-line6-y-property-0) + var(----ballistic-line6-y-property-1) + var(----ballistic-line6-y-property-2));
+--ballistic-line6: var(----ballistic-line6-y);
+
+bottom:calc(1px * var(--ballistic-line6));
+height: 5px;
+width: 5px;
+left: 185px;
+display: block;
+position: absolute;
+margin: 2px;
+border: 1px solid black;
+z-index: 10;
+background: red;
+}
+
+#ballistic-line7{
+--ballistic-line7-half-number: -0.5;
+--ballistic-line7-gravity: 9;
+--ballistic-line7-time: 7;
+--ballistic-line7-velocity: 45;
+--ballistic-line7y-offset: 250;
+--ballistic-line7-time-squared: calc(var(--ballistic-line7-time) * var(--ballistic-line7-time));
+--ballistic-line7-y-property-0: var(--ballistic-line7-half-number);
+--ballistic-line7-y-property-1: var(--ballistic-line7-gravity);
+--ballistic-line7-y-property-2: var(--ballistic-line7-time-squared);
+--ballistic-line7-y: calc(var(--ballistic-line7-y-property-0) * var(--ballistic-line7-y-property-1) * var(--ballistic-line7-y-property-2));
+--ballistic-line7-vt-property-0: var(--ballistic-line7-velocity);
+--ballistic-line7-vt-property-1: var(--ballistic-line7-time);
+--ballistic-line7-vt: calc(var(--ballistic-line7-vt-property-0) * var(--ballistic-line7-vt-property-1));
+----ballistic-line7-y-property-0: var(--ballistic-line7y-offset);
+----ballistic-line7-y-property-1: var(--ballistic-line7-vt);
+----ballistic-line7-y-property-2: var(--ballistic-line7-y);
+----ballistic-line7-y: calc(var(----ballistic-line7-y-property-0) + var(----ballistic-line7-y-property-1) + var(----ballistic-line7-y-property-2));
+--ballistic-line7: var(----ballistic-line7-y);
+
+bottom:calc(1px * var(--ballistic-line7));
+height: 5px;
+width: 5px;
+left: 215px;
+display: block;
+position: absolute;
+margin: 2px;
+border: 1px solid black;
+z-index: 10;
+background: red;
+}
+
+#ballistic-line8{
+--ballistic-line8-half-number: -0.5;
+--ballistic-line8-gravity: 9;
+--ballistic-line8-time: 8;
+--ballistic-line8-velocity: 45;
+--ballistic-line8y-offset: 250;
+--ballistic-line8-time-squared: calc(var(--ballistic-line8-time) * var(--ballistic-line8-time));
+--ballistic-line8-y-property-0: var(--ballistic-line8-half-number);
+--ballistic-line8-y-property-1: var(--ballistic-line8-gravity);
+--ballistic-line8-y-property-2: var(--ballistic-line8-time-squared);
+--ballistic-line8-y: calc(var(--ballistic-line8-y-property-0) * var(--ballistic-line8-y-property-1) * var(--ballistic-line8-y-property-2));
+--ballistic-line8-vt-property-0: var(--ballistic-line8-velocity);
+--ballistic-line8-vt-property-1: var(--ballistic-line8-time);
+--ballistic-line8-vt: calc(var(--ballistic-line8-vt-property-0) * var(--ballistic-line8-vt-property-1));
+----ballistic-line8-y-property-0: var(--ballistic-line8y-offset);
+----ballistic-line8-y-property-1: var(--ballistic-line8-vt);
+----ballistic-line8-y-property-2: var(--ballistic-line8-y);
+----ballistic-line8-y: calc(var(----ballistic-line8-y-property-0) + var(----ballistic-line8-y-property-1) + var(----ballistic-line8-y-property-2));
+--ballistic-line8: var(----ballistic-line8-y);
+
+bottom:calc(1px * var(--ballistic-line8));
+height: 5px;
+width: 5px;
+left: 245px;
+display: block;
+position: absolute;
+margin: 2px;
+border: 1px solid black;
+z-index: 10;
+background: red;
+}
+
+#ballistic-line9{
+--ballistic-line9-half-number: -0.5;
+--ballistic-line9-gravity: 9;
+--ballistic-line9-time: 9;
+--ballistic-line9-velocity: 45;
+--ballistic-line9y-offset: 250;
+--ballistic-line9-time-squared: calc(var(--ballistic-line9-time) * var(--ballistic-line9-time));
+--ballistic-line9-y-property-0: var(--ballistic-line9-half-number);
+--ballistic-line9-y-property-1: var(--ballistic-line9-gravity);
+--ballistic-line9-y-property-2: var(--ballistic-line9-time-squared);
+--ballistic-line9-y: calc(var(--ballistic-line9-y-property-0) * var(--ballistic-line9-y-property-1) * var(--ballistic-line9-y-property-2));
+--ballistic-line9-vt-property-0: var(--ballistic-line9-velocity);
+--ballistic-line9-vt-property-1: var(--ballistic-line9-time);
+--ballistic-line9-vt: calc(var(--ballistic-line9-vt-property-0) * var(--ballistic-line9-vt-property-1));
+----ballistic-line9-y-property-0: var(--ballistic-line9y-offset);
+----ballistic-line9-y-property-1: var(--ballistic-line9-vt);
+----ballistic-line9-y-property-2: var(--ballistic-line9-y);
+----ballistic-line9-y: calc(var(----ballistic-line9-y-property-0) + var(----ballistic-line9-y-property-1) + var(----ballistic-line9-y-property-2));
+--ballistic-line9: var(----ballistic-line9-y);
+
+bottom:calc(1px * var(--ballistic-line9));
+height: 5px;
+width: 5px;
+left: 275px;
+display: block;
+position: absolute;
+margin: 2px;
+border: 1px solid black;
+z-index: 10;
+background: red;
+}
+
+#ballistic-line10{
+--ballistic-line10-half-number: -0.5;
+--ballistic-line10-gravity: 9;
+--ballistic-line10-time: 10;
+--ballistic-line10-velocity: 45;
+--ballistic-line10y-offset: 250;
+--ballistic-line10-time-squared: calc(var(--ballistic-line10-time) * var(--ballistic-line10-time));
+--ballistic-line10-y-property-0: var(--ballistic-line10-half-number);
+--ballistic-line10-y-property-1: var(--ballistic-line10-gravity);
+--ballistic-line10-y-property-2: var(--ballistic-line10-time-squared);
+--ballistic-line10-y: calc(var(--ballistic-line10-y-property-0) * var(--ballistic-line10-y-property-1) * var(--ballistic-line10-y-property-2));
+--ballistic-line10-vt-property-0: var(--ballistic-line10-velocity);
+--ballistic-line10-vt-property-1: var(--ballistic-line10-time);
+--ballistic-line10-vt: calc(var(--ballistic-line10-vt-property-0) * var(--ballistic-line10-vt-property-1));
+----ballistic-line10-y-property-0: var(--ballistic-line10y-offset);
+----ballistic-line10-y-property-1: var(--ballistic-line10-vt);
+----ballistic-line10-y-property-2: var(--ballistic-line10-y);
+----ballistic-line10-y: calc(var(----ballistic-line10-y-property-0) + var(----ballistic-line10-y-property-1) + var(----ballistic-line10-y-property-2));
+--ballistic-line10: var(----ballistic-line10-y);
+
+bottom:calc(1px * var(--ballistic-line10));
+height: 5px;
+width: 5px;
+left: 305px;
+display: block;
+position: absolute;
+margin: 2px;
+border: 1px solid black;
+z-index: 10;
+background: red;
+}
+
+#ballistic-line11{
+--ballistic-line11-half-number: -0.5;
+--ballistic-line11-gravity: 9;
+--ballistic-line11-time: 11;
+--ballistic-line11-velocity: 45;
+--ballistic-line11y-offset: 250;
+--ballistic-line11-time-squared: calc(var(--ballistic-line11-time) * var(--ballistic-line11-time));
+--ballistic-line11-y-property-0: var(--ballistic-line11-half-number);
+--ballistic-line11-y-property-1: var(--ballistic-line11-gravity);
+--ballistic-line11-y-property-2: var(--ballistic-line11-time-squared);
+--ballistic-line11-y: calc(var(--ballistic-line11-y-property-0) * var(--ballistic-line11-y-property-1) * var(--ballistic-line11-y-property-2));
+--ballistic-line11-vt-property-0: var(--ballistic-line11-velocity);
+--ballistic-line11-vt-property-1: var(--ballistic-line11-time);
+--ballistic-line11-vt: calc(var(--ballistic-line11-vt-property-0) * var(--ballistic-line11-vt-property-1));
+----ballistic-line11-y-property-0: var(--ballistic-line11y-offset);
+----ballistic-line11-y-property-1: var(--ballistic-line11-vt);
+----ballistic-line11-y-property-2: var(--ballistic-line11-y);
+----ballistic-line11-y: calc(var(----ballistic-line11-y-property-0) + var(----ballistic-line11-y-property-1) + var(----ballistic-line11-y-property-2));
+--ballistic-line11: var(----ballistic-line11-y);
+
+bottom:calc(1px * var(--ballistic-line11));
+height: 5px;
+width: 5px;
+left: 335px;
+display: block;
+position: absolute;
+margin: 2px;
+border: 1px solid black;
+z-index: 10;
+background: red;
+}
+
+#ballistic-line12{
+--ballistic-line12-half-number: -0.5;
+--ballistic-line12-gravity: 9;
+--ballistic-line12-time: 12;
+--ballistic-line12-velocity: 45;
+--ballistic-line12y-offset: 250;
+--ballistic-line12-time-squared: calc(var(--ballistic-line12-time) * var(--ballistic-line12-time));
+--ballistic-line12-y-property-0: var(--ballistic-line12-half-number);
+--ballistic-line12-y-property-1: var(--ballistic-line12-gravity);
+--ballistic-line12-y-property-2: var(--ballistic-line12-time-squared);
+--ballistic-line12-y: calc(var(--ballistic-line12-y-property-0) * var(--ballistic-line12-y-property-1) * var(--ballistic-line12-y-property-2));
+--ballistic-line12-vt-property-0: var(--ballistic-line12-velocity);
+--ballistic-line12-vt-property-1: var(--ballistic-line12-time);
+--ballistic-line12-vt: calc(var(--ballistic-line12-vt-property-0) * var(--ballistic-line12-vt-property-1));
+----ballistic-line12-y-property-0: var(--ballistic-line12y-offset);
+----ballistic-line12-y-property-1: var(--ballistic-line12-vt);
+----ballistic-line12-y-property-2: var(--ballistic-line12-y);
+----ballistic-line12-y: calc(var(----ballistic-line12-y-property-0) + var(----ballistic-line12-y-property-1) + var(----ballistic-line12-y-property-2));
+--ballistic-line12: var(----ballistic-line12-y);
+
+bottom:calc(1px * var(--ballistic-line12));
+height: 5px;
+width: 5px;
+left: 365px;
+display: block;
+position: absolute;
+margin: 2px;
+border: 1px solid black;
+z-index: 10;
+background: red;
+}
+
+#ballistic-line13{
+--ballistic-line13-half-number: -0.5;
+--ballistic-line13-gravity: 9;
+--ballistic-line13-time: 13;
+--ballistic-line13-velocity: 45;
+--ballistic-line13y-offset: 250;
+--ballistic-line13-time-squared: calc(var(--ballistic-line13-time) * var(--ballistic-line13-time));
+--ballistic-line13-y-property-0: var(--ballistic-line13-half-number);
+--ballistic-line13-y-property-1: var(--ballistic-line13-gravity);
+--ballistic-line13-y-property-2: var(--ballistic-line13-time-squared);
+--ballistic-line13-y: calc(var(--ballistic-line13-y-property-0) * var(--ballistic-line13-y-property-1) * var(--ballistic-line13-y-property-2));
+--ballistic-line13-vt-property-0: var(--ballistic-line13-velocity);
+--ballistic-line13-vt-property-1: var(--ballistic-line13-time);
+--ballistic-line13-vt: calc(var(--ballistic-line13-vt-property-0) * var(--ballistic-line13-vt-property-1));
+----ballistic-line13-y-property-0: var(--ballistic-line13y-offset);
+----ballistic-line13-y-property-1: var(--ballistic-line13-vt);
+----ballistic-line13-y-property-2: var(--ballistic-line13-y);
+----ballistic-line13-y: calc(var(----ballistic-line13-y-property-0) + var(----ballistic-line13-y-property-1) + var(----ballistic-line13-y-property-2));
+--ballistic-line13: var(----ballistic-line13-y);
+
+bottom:calc(1px * var(--ballistic-line13));
+height: 5px;
+width: 5px;
+left: 395px;
+display: block;
+position: absolute;
+margin: 2px;
+border: 1px solid black;
+z-index: 10;
+background: red;
+}
+
+#ballistic-line14{
+--ballistic-line14-half-number: -0.5;
+--ballistic-line14-gravity: 9;
+--ballistic-line14-time: 14;
+--ballistic-line14-velocity: 45;
+--ballistic-line14y-offset: 250;
+--ballistic-line14-time-squared: calc(var(--ballistic-line14-time) * var(--ballistic-line14-time));
+--ballistic-line14-y-property-0: var(--ballistic-line14-half-number);
+--ballistic-line14-y-property-1: var(--ballistic-line14-gravity);
+--ballistic-line14-y-property-2: var(--ballistic-line14-time-squared);
+--ballistic-line14-y: calc(var(--ballistic-line14-y-property-0) * var(--ballistic-line14-y-property-1) * var(--ballistic-line14-y-property-2));
+--ballistic-line14-vt-property-0: var(--ballistic-line14-velocity);
+--ballistic-line14-vt-property-1: var(--ballistic-line14-time);
+--ballistic-line14-vt: calc(var(--ballistic-line14-vt-property-0) * var(--ballistic-line14-vt-property-1));
+----ballistic-line14-y-property-0: var(--ballistic-line14y-offset);
+----ballistic-line14-y-property-1: var(--ballistic-line14-vt);
+----ballistic-line14-y-property-2: var(--ballistic-line14-y);
+----ballistic-line14-y: calc(var(----ballistic-line14-y-property-0) + var(----ballistic-line14-y-property-1) + var(----ballistic-line14-y-property-2));
+--ballistic-line14: var(----ballistic-line14-y);
+
+bottom:calc(1px * var(--ballistic-line14));
+height: 5px;
+width: 5px;
+left: 425px;
+display: block;
+position: absolute;
+margin: 2px;
+border: 1px solid black;
+z-index: 10;
+background: red;
+}
+
+
