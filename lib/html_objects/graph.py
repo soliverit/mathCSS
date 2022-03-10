@@ -22,7 +22,7 @@ class Graph():
 				point		= series.values[idx]
 				point.addStaticProperty("height: %spx" %(str(self.height)))
 				point.addStaticProperty("width: %spx" %(str(self.width)))
-				point.addStaticProperty("left: %spx" %(str(self.width * idx + 5 + self.offset)))
+				point.addStaticProperty("left: %spx" %(str(series.scale * idx + 5 + self.offset)))
 				point.addStaticProperty("display: block")
 				point.addStaticProperty("position: absolute")
 				point.addStaticProperty("margin: 2px")
