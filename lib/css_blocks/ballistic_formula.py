@@ -3,13 +3,14 @@ from ..css_blocks.sum		import Sum
 from ..css_blocks.power		import Power
 from ..css_blocks.product	import Product
 class BallisticFormula(CSSBlock):
-	def __init__(self, handle, time, gravity, velocity, targetProperty=False):
+	def __init__(self, handle, time, gravity, velocity, yOffset, targetProperty=False):
 		## Super stuff
 		super().__init__(handle, targetProperty)
 		## Instance stuff
 		self.addProperty(gravity)
 		self.addProperty(velocity)
 		self.addProperty(time)
+		self.addProperty(yOffset)
 		
 	##
 	# Getter
@@ -21,6 +22,8 @@ class BallisticFormula(CSSBlock):
 		return self.properties[1]
 	def time(self):
 		return self.properties[2]
+	def yOffset(self):
+		return self.properties[3]
 	## Var or numeric string
 	def gravityString(self):
 		return self.getPropertyString(0)
@@ -41,16 +44,18 @@ class BallisticFormula(CSSBlock):
 		gravity		= handle + "-gravity"
 		time		= handle + "-time"
 		velocity	= handle + "-velocity"
+		yOffset		= handle + "y-offset"
 		halfNumber	= handle + "-half-number"
 		output		+= halfNumber + ": -0.5;\n"
 		output		+= gravity + ": " + str(self.gravity().value) + ";\n"
 		output		+= time + ": " + str(self.time().value) + ";\n"
 		output		+= velocity + ": " + str(self.velocity().value) + ";\n"
+		output		+= yOffset + ": " + str(self.yOffset().value) + ";\n"
 		## Do math
 		timeSquared	= Power(self.handle + "-time-squared", time, 2)
 		gravityTime	= Product(self.handle + "-y", [halfNumber, gravity, timeSquared.getHandle()])
 		velocityTime= Product(self.handle + "-vt", [velocity, time])
-		y			= Sum(handle + "-y", [velocityTime.getHandle(), gravityTime.getHandle()])
+		y			= Sum(handle + "-y", [yOffset, velocityTime.getHandle(), gravityTime.getHandle()])
 		## Update outputs
 		output 		+= timeSquared.toBlockString() + "\n"
 		output 		+= gravityTime.toBlockString() + "\n"

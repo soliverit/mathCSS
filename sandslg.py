@@ -34,7 +34,8 @@ for idx in range(50):
 	line.append(SimpleLinearRegression("lin-a" + str(idx), X, Y, X[idx].value, "bottom"))
 	series.append(SimpleLinearRegression("lin-" + str(idx), X, Y, idx * randint(1, 3), "bottom"))
 ## The graph
-html	= HTMLDocument()
+prefix	= "ball"			
+html	= HTMLDocument(prefix)
 graph	= Graph("the-graph", [Series(series, "green"), Series(line, "red")])
 html.addObject(graph)
 print("--- HTML ---")
@@ -42,8 +43,8 @@ print("--- HTML ---")
 print("--- CSS ---")
 # print(graph.css)
 ## The files
-html.writeHTML("./graph.html")
-html.writeCSS("./test/style.css")
+html.writeHTML("./slg_graph.html")
+html.writeCSS("./test/%s_style.css" %(prefix))
 
 
 

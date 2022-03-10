@@ -34,8 +34,9 @@ class Graph():
 				self.css	+= str(series.values[idx]) + "\n"
 				## The HTML
 				self.html	+= self.makeDiv(point.handle, "", "") + "\n"
+				
 		self.html	= self.makeDiv(self.handle + "-background", self.html, "background:white;top:20px;left:20px;width:460px;height:390px;")
-		self.html	+= self.makeDiv(self.handle, self.title, "border:1px solid;border-collapse:collapse;background:beige;top:30px;left:30px;width:100px;height:20px;")
+		self.html	+= self.makeDiv(self.handle, self.title, "position:relative !important;border:1px solid;border-collapse:collapse;background:beige;top:30px;left:30px;width:100px;height:20px;")
 		self.html	= self.makeDiv(self.handle, self.html, "background:grey;width:500px;height:450px;" )
 		
 	def makeDiv(self, id, value, style=""):

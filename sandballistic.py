@@ -18,29 +18,32 @@ from lib.html_objects.series			import Series
 
 
 ## Some data
-GRAVITY 	= CSSProperty("gravity", 8.)
+GRAVITY 	= CSSProperty("gravity", 9)
 GRAVITY_2	= CSSProperty("gravity_2", 5.5)
-VELOCITY	= CSSProperty("velocity", 57)
+VELOCITY	= CSSProperty("velocity", 45)
 VELOCITY_2	= CSSProperty("velocity", 57)
+BASE		= CSSProperty("base-y", 250)
+BASE_2		= CSSProperty("base-y", 20)
 
 ## Some data points for the graph
 series	= []
 line	= []
 for idx in range(15):
-	line.append(BallisticFormula("ballistic-line" + str(idx), CSSProperty("-lx-" + str(idx), idx), GRAVITY, VELOCITY, "bottom"))
-	series.append(BallisticFormula("ballistic-series" + str(idx), CSSProperty("-sx-" + str(idx), idx), GRAVITY_2, VELOCITY_2, "bottom"))
+	line.append(BallisticFormula("ballistic-line" + str(idx), CSSProperty("-lx-" + str(idx), idx), GRAVITY, VELOCITY, BASE, "bottom"))
+	series.append(BallisticFormula("ballistic-series" + str(idx), CSSProperty("-sx-" + str(idx), idx), GRAVITY_2, VELOCITY_2, BASE_2, "bottom"))
 
 ## The graph
-html	= HTMLDocument()
-graph	= Graph("the-graph", [Series(series, "green", 15), Series(line, "red", 30)])
+prefix	= "ball"			
+html	= HTMLDocument(prefix)
+graph	= Graph("Ballistic", [Series(series, "green", 30), Series(line, "red", 30)])
 html.addObject(graph)
 print("--- HTML ---")
 # print(graph.html)
 print("--- CSS ---")
 # print(graph.css)
 ## The files
-html.writeHTML("./quad_graph.html")
-html.writeCSS("./test/style.css")
+html.writeHTML("./ball_graph.html")
+html.writeCSS("./test/%s_style.css" %(prefix))
 
 
 
