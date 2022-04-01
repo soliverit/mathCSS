@@ -1,8 +1,8 @@
 from ..css_block import CSSBlock
 class SimpleLinearRegression(CSSBlock):
-	def __init__(self, handle, xSet, ySet, x, targetProperty=False):
+	def __init__(self, handle, xSet, ySet, x, targetProperty=False, scale=1):
 		## Super stuff
-		super().__init__(handle, targetProperty)
+		super().__init__(handle, targetProperty, scale)
 		## Instance stuff
 		##
 		# x:	The value that the  y = mx + c.

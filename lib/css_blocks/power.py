@@ -6,8 +6,8 @@ from ..css_property	import CSSProperty
 #	Uses addProperty for using getPropertyString for the value
 ##
 class Power(CSSBlock):
-	def __init__(self, handle, value, power, targetProperty=False):
-		super().__init__(handle, targetProperty)
+	def __init__(self, handle, value, power, targetProperty=False, scale=1):
+		super().__init__(handle, targetProperty, scale=1)
 		self.addProperty(value)
 		self.power	= power.value if isinstance(power, CSSProperty) else power
 	def valueString(self):

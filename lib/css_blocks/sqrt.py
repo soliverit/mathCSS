@@ -1,7 +1,7 @@
 from ..css_block import CSSBlock
 class Sqrt(CSSBlock):
-	def __init__(self, handle, property, targetProperty=False):
-		super().__init__(handle, targetProperty)
+	def __init__(self, handle, property, targetProperty=False, scale=1):
+		super().__init__(handle, targetProperty, scale)
 		self.addProperty(property)
 	def toBlockString(self):
 		handle			= self.getHandle()

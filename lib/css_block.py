@@ -1,6 +1,7 @@
 class CSSBlock():
-	def __init__(self, handle, targetProperty=False):
+	def __init__(self, handle, targetProperty=False, scale=1):
 		self.handle				= handle
+		self.scale				= scale
 		self.targetProperty		= targetProperty
 		self.properties 		= []
 		self.staticProperties	= []
@@ -25,7 +26,7 @@ class CSSBlock():
 	def __str__(self):
 		blockString	= self.getBlockID() + "{\n" + self.toBlockString() 
 		if self.targetProperty:
-			blockString += "\n" + self.targetProperty + ":calc(1px * var(" + self.getHandle() + "));\n"
+			blockString += "\n" + self.targetProperty + ":calc(" + str(self.scale) + " * 1px * var(" + self.getHandle() + "));\n"
 		for property in self.staticProperties:
 			blockString += property + ";\n"
 		blockString	+= "}\n"

@@ -2,6 +2,8 @@ class HTMLDocument():
 	HEADER	= """<head>
 				<link rel="stylesheet" href="./test/STYLE_ALIAS.css" />
 				<link rel="stylesheet" href="./test/static_style.css" />
+				<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js" ></script>
+				<script src="./test/debug.js"></script>
 			</head>"""
 	def __init__(self, prefix):
 		self.prefix		= prefix

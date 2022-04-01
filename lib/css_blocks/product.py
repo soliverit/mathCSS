@@ -1,7 +1,7 @@
 from ..css_block import CSSBlock
 class Product(CSSBlock):
-	def __init__(self, handle, properties, targetProperty=False):
-		super().__init__(handle, targetProperty)
+	def __init__(self, handle, properties, targetProperty=False, scale=1):
+		super().__init__(handle, targetProperty, scale)
 		for property in properties:
 			self.addProperty(property)
 	def toBlockString(self):

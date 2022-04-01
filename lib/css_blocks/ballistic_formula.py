@@ -3,9 +3,9 @@ from ..css_blocks.sum		import Sum
 from ..css_blocks.power		import Power
 from ..css_blocks.product	import Product
 class BallisticFormula(CSSBlock):
-	def __init__(self, handle, time, gravity, velocity, yOffset, targetProperty=False):
+	def __init__(self, handle, time, gravity, velocity, yOffset, targetProperty=False, scale=1):
 		## Super stuff
-		super().__init__(handle, targetProperty)
+		super().__init__(handle, targetProperty, scale)
 		## Instance stuff
 		self.addProperty(gravity)
 		self.addProperty(velocity)

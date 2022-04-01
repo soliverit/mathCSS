@@ -1,8 +1,8 @@
 from ..css_block	import CSSBlock		
 class Tan(CSSBlock):
 
-	def __init__(self, hnd, angle, targetProperty=False):
-		super().__init__(hnd, targetProperty)
+	def __init__(self, hnd, angle, targetProperty=False, scale=1):
+		super().__init__(hnd, targetProperty, scale)
 		self.addProperty(angle)
 	def toBlockString(self):
 		hnd		= self.getHandle()
