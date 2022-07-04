@@ -3,5 +3,7 @@ class BaseLayer():
 		self.nodes	= [self.createNode(label) for label in nodeLabels]
 	def addNode(self, node):
 		self.nodes.append(node)
+	def nodeCount(self):
+		return len(self.nodes)
 	def createNode(self, label):
 		raise "BaseLayer: createNode isn't overridden with a method returning a NodeType(BaseNode)"
